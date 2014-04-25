@@ -133,7 +133,7 @@ exception EmptyStack
 
 let binaryOperation stack f = match stack with 
     | EMPTY -> raise EmptyStack
-    | VAL(_,NONE) -> raise EmptyStack
+    | VAL(_,EMPTY) -> raise EmptyStack
     | VAL(x,VAL(y,s)) -> VAL(f y x, s);;
 
 let unaryOperation stack f = match stack with 
