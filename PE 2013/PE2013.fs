@@ -192,6 +192,6 @@ let rec uzX xs = match xs with
 | _ -> failwith "Error"
 
 //Type C list -> A list * B list
-let uzXeg1 = uzX [C (1,1); C (2,2); C (3,3)] // = [A 1;A 2;A 3] [B 1; B 2;B 3]
-let uzXeg2 = uzX [C (1,4); C (2,5); C (3,6)] // = [A 1;A 2;A 3] [B 4; B 5;B 6]
-let uzXeg3 = uzX [C (3,1); C (2,2); C (1,3)] // = [A 3;A 2;A 1] [B 1; B 2;B 3]
+let uzXeg1 = uzX [C (1,1); C (2,2); C (3,3)] // = ([A 1;A 2;A 3],[B 1; B 2;B 3])
+let uzXeg2 = uzX [C (1,4); C (2,5); C (3,6)] // = ([A 1;A 2;A 3],[B 4; B 5;B 6])
+let uzXeg3 = uzX [C (3,1); C (2,2); C (1,3)] // = ([A 3;A 2;A 1],[B 1; B 2;B 3])
